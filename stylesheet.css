@@ -228,6 +228,15 @@ footer a {
         border-radius: 0;
     }
 
+    article h1, article h2 {
+        padding-left: 4rem;
+    }
+
+    article p {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
     footer {
         margin-bottom: 0;
         border-radius: 0;
