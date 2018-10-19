@@ -162,8 +162,12 @@ h2 {
     font-weight: inherit;
 }
 
-#spoilerclick {
+#spoilerclick, #infoboxarrow {
     cursor: pointer;
+}
+
+#infoboxarrow {
+    display: none;
 }
 
 #spoilerclick:hover span {
@@ -245,5 +249,33 @@ footer a {
     footer p {
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    .infobox {
+        margin-right: 4rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #infoboxarrow {
+        display: inline-block;
+        float: right;
+        margin: 0.25rem;
+    }
+
+    #internal {
+        display: none;
+    }
+
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+        border-radius: 0;
+    }
+
+    .infobox img {
+        width: calc(100% - 4rem);
+        padding: 1rem 2rem;
     }
 }

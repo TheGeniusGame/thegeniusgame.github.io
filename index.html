@@ -24,8 +24,9 @@
     <article>
         <h1>Test Page, Please Ignore</h1>
         <div class="infobox">
-            <h1>Season 1, Episode 1:<br />
+            <h1><i id="infoboxarrow" class="fas fa-arrow-down"></i>Season 1, Episode 1:<br />
             1•2•3 Game</h1>
+            <div id="internal">
             <img src="/images/S01E01_thumb.png" alt="Logo for the 1, 2, 3 Game"/>
             <h2>EPISODE</h2>
             <div class="details">
@@ -48,6 +49,7 @@
                 <span>Minseo<br />Junseok</span>
                 <b>Death Match Result</b>
                 <span>Junseok eliminated<br />(11-10)</span>
+            </div>
             </div>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
@@ -80,6 +82,12 @@
             $('#spoilers').toggle();
             $("#spoilarrow").toggleClass('fa-arrow-down');
             $("#spoilarrow").toggleClass('fa-arrow-up');
+        })
+
+        $('#infoboxarrow').click(function() {
+            $('#internal').toggle();
+            $("#infoboxarrow").toggleClass('fa-arrow-down');
+            $("#infoboxarrow").toggleClass('fa-arrow-up');
         })
     </script>
     <footer>
