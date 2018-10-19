@@ -185,11 +185,25 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 0;
+    padding: 1rem;
+    background: black;
+    color: gold
+}
+
+footer img {
+    display: inline-block;
+    width: calc(100% - 2rem);
+    max-width: 350px;
+    margin: 1rem;
+}
+
 footer a {
     text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     body {
         padding: 0;
     }
@@ -199,6 +213,11 @@ footer a {
         border-radius: 0;
     }
 
+    header nav {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+
     article {
         border-radius: 0;
     }
@@ -206,5 +225,10 @@ footer a {
     footer {
         margin-bottom: 0;
         border-radius: 0;
+    }
+
+    footer p {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
