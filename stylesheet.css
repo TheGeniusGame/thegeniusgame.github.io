@@ -204,7 +204,9 @@ footer a {
 }
 
 @media (max-width: 1200px) {
-    padding: 0 2rem;
+    body {
+        padding: 0 2rem;
+    }
 }
 
 @media (max-width: 900px) {
