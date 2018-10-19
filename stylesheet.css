@@ -2,6 +2,10 @@
 
 @import url('https://rsms.me/inter/inter-ui.css');
 
+:root {
+    background-image: url('/images/background.svg');
+}
+
 h1, h2, h3, h4, h5, h6, .title {
     font-family: 'Yeon Sung', serif;
     font-weight: normal;
@@ -29,7 +33,6 @@ h1, h2, h3, h4, h5, h6, .title {
 body {
     margin: 0;
     padding: 2rem 6rem;
-    background-image: url('/images/background.svg');
     font-family: "Inter UI", sans-serif;
 }
 
