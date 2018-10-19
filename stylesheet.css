@@ -188,3 +188,23 @@ footer {
 footer a {
     text-decoration: none;
 }
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    article {
+        border-radius: 0;
+    }
+
+    footer {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+}
