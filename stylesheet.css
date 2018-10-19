@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, header {
 
 header {
     line-height: 1.2;
-    background: rgba(255, 215, 0, 0.95);
+    background: rgba(255, 215, 0, 0.9);
     padding: 0;
     margin: 0 0 1rem;
     border-radius: 1rem;
@@ -85,7 +85,7 @@ nav > a {
 }
 
 article {
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.9);
     border-radius: 1rem;
     overflow: hidden;
 }
