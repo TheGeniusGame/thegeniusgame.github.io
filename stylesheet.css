@@ -3,7 +3,8 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 
 :root {
-    background-image: url('/images/background.svg');
+    background-image: url('/images/background.png');
+    background-size: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6, .title {
@@ -73,4 +74,8 @@ nav > a {
 
 * {
     transition: opacity 0.5s;
+}
+
+.current {
+    background-color: gold;
 }
