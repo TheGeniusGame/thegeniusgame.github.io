@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+    <header><a href="/">
+            <div><span>an in-depth guide to</span><br /><span class="bigtitle">The Genius</span><br /><span class="korean">&lt; 더 지니어스 &gt;</span></div>
+        </a>
+        <nav>
+            <a href="/s1"><span>S1: Rules of the Game</span></a>
+            <a href="/s2"><span>S2: Rule Breaker</span></a>
+            <a href="/s3"><span>S3: Black Garnet</span></a>
+            <a href="/s4"><span>S4: Grand Final</span></a>
+            <a href="/games"><span>Game Directory</span></a>
+            <a href="/players"><span>Player Directory</span></a>
+        </nav>
+    </header>
+    <article>
+        <h1>404: Page Not Found</h1>
+        <p>Congratulations, you found the secret non-existent page. For your efforts, I award you 1 imaginary garnet* and the ability to go to any of the pages linked from the header above.<br /><br /><br /><br /><br /><br /><br /><br /><br />* Imaginary garnets are not redeemable for cash, credit, or other prize.</p>
+    </article>
+    <script>
+        $('#spoilers').hide();
+
+        $('nav').find('a').filter(function() {
+            return this.href.replace(/\/+$/, '') === window.location.href.replace(/\/+$/, '');
+        }).addClass('current');
+
+        $('#spoilerclick').click(function() {
+            $('#spoilers').toggle();
+            $("#spoilarrow").toggleClass('fa-arrow-down');
+            $("#spoilarrow").toggleClass('fa-arrow-up');
+        })
+    </script>
+</body>
+
+</html>

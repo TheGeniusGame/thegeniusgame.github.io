@@ -4,10 +4,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="/stylesheet.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="title"><a href="/">
+    <header><a href="/">
             <div><span>an in-depth guide to</span><br /><span class="bigtitle">The Genius</span><br /><span class="korean">&lt; 더 지니어스 &gt;</span></div>
         </a>
         <nav>
@@ -18,11 +19,67 @@
             <a href="/games"><span>Game Directory</span></a>
             <a href="/players"><span>Player Directory</span></a>
         </nav>
-    </div>
+    </header>
+    <article>
+        <h1>Test Page, Please Ignore</h1>
+        <div class="infobox">
+            <h1>Season 1, Episode 1:<br />
+            1•2•3 Game</h1>
+            <img src="/images/S01E01_thumb.png" alt="Logo for the 1, 2, 3 Game"/>
+            <h2>EPISODE</h2>
+            <div class="details">
+                <b>Season</b>
+                <a href="/s1"><span>Rules of the Game</span></a>
+                <b>Episode</b>
+                <span>1</span>
+                <b>Main Match</b>
+                <span>1•2•3 Game</span>
+                <b>Death Match</b>
+                <span>Winning Streak Game</span>
+            </div>
+            <h2 id="spoilerclick" onclick=""><span>SPOILERS <i id="spoilarrow" class="fas fa-arrow-down"></i></span></h2>
+            <div id="spoilers" class="details">
+                <b>Winner(s)</b>
+                <span>Sunggyu<br />Jinho<br />(6 points)</span>
+                <b>Loser(s)</b>
+                <span>Minseo<br />(0 points)</span>
+                <b>Elimination Candidates</b>
+                <span>Minseo<br />Junseok</span>
+                <b>Death Match Result</b>
+                <span>Junseok eliminated<br />(11-10)</span>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
+            elit. Aenean commodo ligula eget dolor. Aenean massa
+            <strong>strong</strong>. Cum sociis natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus
+            mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis
+            enim. Donec pede justo, fringilla vel, aliquet nec,
+            vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum
+            felis eu pede <a class="external ext" href="#">link</a>
+            mollis pretium. Integer tincidunt. Cras dapibus.
+            Vivamus elementum semper nisi. Aenean vulputate
+            eleifend tellus. Aenean leo ligula, porttitor eu,
+            consequat vitae, eleifend ac, enim. Aliquam lorem ante,
+            dapibus in, viverra quis, feugiat a, tellus. Phasellus
+            viverra nulla ut metus varius laoreet. Quisque rutrum.
+            Aenean imperdiet. Etiam ultricies nisi vel augue.
+            Curabitur ullamcorper ultricies nisi.</p>
+    </article>
     <script>
-        $('nav').find("a").filter(function() {
+        $('#spoilers').hide();
+
+        $('nav').find('a').filter(function() {
             return this.href.replace(/\/+$/, '') === window.location.href.replace(/\/+$/, '');
         }).addClass('current');
+
+        $('#spoilerclick').click(function() {
+            $('#spoilers').toggle();
+            $("#spoilarrow").toggleClass('fa-arrow-down');
+            $("#spoilarrow").toggleClass('fa-arrow-up');
+        })
     </script>
 </body>
 

@@ -7,7 +7,7 @@
     background-size: 1.5rem;
 }
 
-h1, h2, h3, h4, h5, h6, .title {
+h1, h2, h3, h4, h5, h6, header {
     font-family: 'Yeon Sung', serif;
     font-weight: normal;
 }
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, .title {
     font-family: 'Do Hyeon', sans-serif;
 }
 
-.title {
+header {
     line-height: 1.2;
     background: rgba(255, 215, 0, 0.95);
     padding: 0;
@@ -37,18 +37,22 @@ body {
     font-family: "Inter UI", sans-serif;
 }
 
+header a {
+    text-decoration: none;
+}
+
 a {
     color: inherit;
-    text-decoration: none;
     font-weight: bold;
 }
 
-.title > a > div {
+header > a > div {
     padding: 1rem 0;
     text-align: center;
+    font-weight: normal;
 }
 
-a:hover > div, a:hover > span {
+a:hover > div, a:hover > span, article a:hover {
     opacity: 0.6;
 }
 
@@ -78,4 +82,93 @@ nav > a {
 
 .current {
     background-color: gold;
+}
+
+article {
+    background: rgba(255,255,255,0.85);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+article p {
+    margin: 1rem;
+}
+
+h1 {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0 0 1rem;
+    font-size: 2rem;
+}
+
+h2 {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto 1rem 0;
+    font-size: 1.5rem;
+    border-radius: 0 0.75rem 0.75rem 0;
+    width: max-content;
+}
+
+.infobox {
+    background: lightgray;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    float: right;
+    margin: 0 1rem 1rem;
+    width: 20rem;
+}
+
+.infobox h1 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.infobox img {
+    background: url('/images/background.png');
+    background-size: 1.5rem;
+    display: block;
+    width: 18rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.infobox h2 {
+    padding: 0.3rem;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 0;
+    width: auto;
+}
+
+.infobox .details {
+    display: grid;
+    margin: 1rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.75rem;
+    grid-template-columns: minmax(min-content, 7rem) auto;
+    line-height: 1.4;
+}
+
+.infobox a {
+    font-weight: inherit;
+}
+
+#spoilerclick {
+    cursor: pointer;
+}
+
+#spoilerclick:hover span {
+    opacity: 0.6;
+}
+
+.fa-arrow-down, .fa-arrow-up {
+    font-size: 1rem;
 }
