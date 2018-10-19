@@ -20,16 +20,9 @@
         </nav>
     </div>
     <script>
-        $(function() {
-
-            var pathname = (window.location.pathname.match(/[^\/]+$/)[0]);
-
-            $('nav a').each(function() {
-                if ($(this).attr('href') == pathname) {
-                    $(this).addClass('current');
-                }
-            });
-        });
+        $('nav').find("a").filter(function() {
+            return this.href.replace(/\/+$/, '') === window.location.href.replace(/\/+$/, '');
+        }).addClass('current');
     </script>
 </body>
 
