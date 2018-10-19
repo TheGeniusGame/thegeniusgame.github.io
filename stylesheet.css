@@ -20,7 +20,7 @@ header {
     line-height: 1.2;
     background: rgba(255, 215, 0, 0.9);
     padding: 0;
-    margin: 0 0 1rem;
+    margin: 2rem 0;
     border-radius: 1rem;
     font-size: 2rem;
     overflow: hidden;
@@ -33,7 +33,7 @@ header {
 
 body {
     margin: 0;
-    padding: 2rem 6rem;
+    padding: 0 6rem;
     font-family: "Inter UI", sans-serif;
 }
 
@@ -88,6 +88,7 @@ article {
     background: rgba(255,255,255,0.9);
     border-radius: 1rem;
     overflow: hidden;
+    margin: 2rem 0;
 }
 
 article p {
@@ -171,4 +172,19 @@ h2 {
 
 .fa-arrow-down, .fa-arrow-up {
     font-size: 1rem;
+}
+
+footer {
+    line-height: 1.2;
+    background: rgba(255, 215, 0, 0.9);
+    padding: 0;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
 }
