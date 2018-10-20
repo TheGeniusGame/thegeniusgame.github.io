@@ -91,8 +91,37 @@ article {
     margin: 2rem 0;
 }
 
-article p {
+article p, article ul {
     margin: 1rem;
+}
+
+.back {
+    background: black;
+    color: gold;
+    width: max-content;
+    font-size: 0.9rem;
+    border-bottom-right-radius: 0.75rem;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 1rem;
+}
+
+.back a {
+    text-decoration: none;
+    font-weight: inherit;
+}
+
+.backinternal {
+    padding: 0.75rem;
+    padding-left: 1rem;
+}
+
+p, h1, h2, ul, ol {
+    clear: left;
+}
+
+.galleryheader, .gallery {
+    clear: both;
 }
 
 h1 {
@@ -100,7 +129,7 @@ h1 {
     color: black;
     font-weight: bold;
     padding: 1rem;
-    margin: 0 0 1rem;
+    margin: 0;
     font-size: 2rem;
 }
 
@@ -120,7 +149,7 @@ h2 {
     border-radius: 0.75rem;
     overflow: hidden;
     float: right;
-    margin: 0 1rem 1rem;
+    margin: 1rem;
     width: 20rem;
 }
 
@@ -132,7 +161,7 @@ h2 {
 }
 
 .infobox img {
-    background: url('/images/background.png');
+    background: url('/images/background.png') darkgray;
     background-size: 1.5rem;
     display: block;
     width: 18rem;
@@ -154,7 +183,7 @@ h2 {
     margin: 1rem;
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.75rem;
-    grid-template-columns: minmax(min-content, 7rem) auto;
+    grid-template-columns: minmax(min-content, auto) auto;
     line-height: 1.4;
 }
 
@@ -207,6 +236,45 @@ footer a {
     text-decoration: none;
 }
 
+.gallery {
+    display: flex;
+    flex-flow: wrap;
+    margin: 1rem 0 0 1rem;
+}
+
+.gallery > * {
+    display: block;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin: 0 1rem 1rem 0;
+    width: 15rem;
+}
+
+.gallery a:hover {
+    opacity: 1;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+.gallery a .caption {
+    display: block;
+    text-align: center;
+    color: gold;
+    background: black;
+    padding: 0.5rem;
+}
+
+.gallery a:hover .caption {
+    opacity: 1;
+}
+
+.gallery a:hover .caption .captint {
+    opacity: 0.6;
+}
+
 @media (max-width: 1200px) {
     body {
         padding: 0 2rem;
@@ -236,7 +304,7 @@ footer a {
         padding-left: 4rem;
     }
 
-    article p {
+    article p, article ul {
         margin-left: 4rem;
         margin-right: 4rem;
     }
@@ -253,6 +321,10 @@ footer a {
 
     .infobox {
         margin-right: 4rem;
+    }
+
+    .backinternal {
+        padding-left: 4rem;
     }
 }
 
