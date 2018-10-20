@@ -305,12 +305,12 @@ footer a:hover {
     }
 
     article h1, article h2 {
-        padding-left: 4rem;
+        padding-left: 2rem;
     }
 
     article p, article ul {
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
     footer {
@@ -324,11 +324,11 @@ footer a:hover {
     }
 
     .infobox {
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 
     .backinternal {
-        padding-left: 4rem;
+        padding-left: 2rem;
     }
 }
 
