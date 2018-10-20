@@ -56,7 +56,7 @@ a:hover > div, a:hover > span, article a:hover {
     opacity: 0.6;
 }
 
-nav {
+header nav {
     line-height: 1;
     background: #000;
     display: flex;
@@ -65,7 +65,7 @@ nav {
     justify-content: center;
 }
 
-nav > a {
+header nav > a {
     background: white;
     text-align: center;
     display: block;
@@ -120,7 +120,7 @@ p, h1, h2, ul, ol {
     clear: left;
 }
 
-.galleryheader, .gallery {
+.galleryheader {
     clear: both;
 }
 
@@ -252,6 +252,11 @@ footer a:hover {
     overflow: hidden;
     margin: 0 1rem 1rem 0;
     width: 15rem;
+    height: max-content;
+}
+
+.gallery.square > * {
+    width: 10rem;
 }
 
 .gallery a:hover {
@@ -261,6 +266,8 @@ footer a:hover {
 .gallery img {
     width: 100%;
     display: block;
+    background: url('/images/background.png') darkgray;
+    background-size: 1.5rem;
 }
 
 .gallery a .caption {
@@ -277,6 +284,33 @@ footer a:hover {
 
 .gallery a:hover .caption .captint {
     opacity: 0.6;
+}
+
+article nav {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 1rem auto 1rem 0;
+    border-radius: 0 0.75rem 0.75rem 0;
+    width: max-content;
+    counter-reset: toc;
+    line-height: 1.2;
+    font-feature-settings: "tnum";
+}
+
+article nav > * {
+    display: block;
+}
+
+article nav > a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+article nav > a:before {
+    counter-increment: toc;
+    content: counter(toc) ". "
 }
 
 @media (max-width: 1200px) {
